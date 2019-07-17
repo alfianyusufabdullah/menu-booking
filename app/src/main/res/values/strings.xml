@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Menu Booking</string>
+    <string name="review_booking">%1$d Item | Rp. %2$d </string>
+</resources>
