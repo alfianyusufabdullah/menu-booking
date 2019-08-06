@@ -6,5 +6,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class MenuHeaderHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    val itemHeader = itemView.findViewById(R.id.tvHeaderItem) as TextView
+     val itemHeader = itemView.findViewById(R.id.tvHeaderItem) as TextView
+
+    fun bindContent(text: String){
+        itemHeader.text = text
+    }
 }

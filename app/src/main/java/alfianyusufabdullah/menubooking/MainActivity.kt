@@ -5,9 +5,9 @@ import alfianyusufabdullah.menubooking.data.Menu
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_menu.*
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MenuActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private var menuData = mutableListOf<Any>()
     private var totalOrder = 0
@@ -15,9 +15,9 @@ class MenuActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        setContentView(R.layout.activity_main)
 
-        menuData = Menu.retrieveMenu()
+        menuData = Menu.menus.toMutableList()
 
         val menuAdapter = MenuAdapter(menuData)
         menuAdapter.setAddedItemListener { menuItem, position ->
