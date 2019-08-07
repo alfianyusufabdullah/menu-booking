@@ -1,3 +1,3 @@
 # Menu Booking
 
-## Multitype View implementation on RecyclerView
+ Multitype View implementation on RecyclerView
